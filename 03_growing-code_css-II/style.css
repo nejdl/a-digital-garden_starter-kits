@@ -1,0 +1,52 @@
+#bee {
+  animation-name: beeAnimation;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+
+  position: fixed;
+  left: 50%;
+  top: 50%;
+}
+
+/* https://www.w3schools.com/css/css3_animations.asp */
+
+@keyframes beeAnimation {
+  0% {
+    font-size: 10px;
+    left: 50%;
+    top: 50%;
+  }
+  30% {
+    top: 20%;
+  }
+  60% {
+    font-size: 50px;
+    left: 70%;
+  }
+  100% {
+    font-size: 30px;
+    left: 10%;
+    top: 80%;
+  }
+}
+
+body {
+  background-color: aliceblue;
+  transition: all 0.3s ease;
+}
+
+p {
+  color: lime;
+  font-family: monospace;
+}
+
+@media screen and (max-width: 700px) {
+  body {
+    background-color: darkblue;
+  }
+
+  #bee {
+    animation-play-state: paused;
+  }
+}

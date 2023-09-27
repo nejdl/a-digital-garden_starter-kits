@@ -1,0 +1,68 @@
+/* h1 {
+  color: purple;
+  font-family: sans-serif;
+  font-weight: normal;
+} */
+
+body {
+  margin: 0px;
+  /* border: 1px solid green; */
+  font-family: monospace;
+  color: transparent;
+}
+
+h1 {
+  color: purple;
+  font-weight: normal;
+  padding: 10px;
+  margin: 0;
+}
+
+div {
+  /* background-color: lightcyan; */
+}
+
+#stem {
+  background-color: green;
+}
+
+#petals {
+  background-color: coral;
+  border-radius: 20px;
+  width: 10vh;
+  height: 5vw;
+  transition: background-color 0.3s ease;
+}
+
+#petals:hover {
+  background-color: purple;
+}
+
+#stem {
+  width: 10px;
+  height: 50vh;
+  margin-left: 20px;
+}
+
+.leave {
+  background-color: lime;
+  background: linear-gradient(45deg, lime 30%, transparent);
+  width: 50px;
+  height: 140px;
+  position: absolute;
+  bottom: 0px;
+
+  border-radius: 100%;
+  transform: rotate(-50deg);
+  transform-origin: bottom;
+}
+
+#leave-2 {
+  transform: rotate(50deg);
+}
+
+#thistle-wrapper {
+  margin-left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+}
